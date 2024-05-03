@@ -1,7 +1,7 @@
 ---
 import "../styles/style.css";
 
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const pageTitle = "ホームページ";
@@ -16,8 +16,11 @@ const pageTitle = "ホームページ";
 		<title>Astro</title>
 	</head>
 	<body>
-		<Navigation/>
+		<Header/>
 		<h2>{pageTitle}</h2>
 		<Footer/>
+		<script>
+			import "../scripts/menu.js"
+		</script>
 	</body>
 </html>
